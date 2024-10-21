@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+    cursor: default;
+    user-select: none;
+    justify-content: center;
+    background-color: #090c10; /* Couleur de base du fond */
+    background-image: radial-gradient(circle at 20% 30%, rgba(153, 69, 255, 0.15) 0%, rgba(153, 69, 255, 0) 50%),
+                      radial-gradient(circle at 70% 50%, rgba(20, 241, 149, 0.15) 0%, rgba(20, 241, 149, 0) 50%);
+    background-size: cover;
+    animation: lights 10s infinite alternate; /* Animation continue */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+}
+
+@keyframes lights {
+    0% {
+        background-image: radial-gradient(circle at 10% 20%, rgba(153, 69, 255, 0.3) 0%, rgba(153, 69, 255, 0) 60%),
+                          radial-gradient(circle at 80% 70%, rgba(20, 241, 149, 0.3) 0%, rgba(20, 241, 149, 0) 60%);
+    }
+    50% {
+        background-image: radial-gradient(circle at 30% 40%, rgba(153, 69, 255, 0.5) 0%, rgba(153, 69, 255, 0) 60%),
+                          radial-gradient(circle at 60% 30%, rgba(20, 241, 149, 0.5) 0%, rgba(20, 241, 149, 0) 60%);
+    }
+    100% {
+        background-image: radial-gradient(circle at 50% 60%, rgba(153, 69, 255, 0.3) 0%, rgba(153, 69, 255, 0) 60%),
+                          radial-gradient(circle at 20% 80%, rgba(20, 241, 149, 0.3) 0%, rgba(20, 241, 149, 0) 60%);
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4632ff;
+    background-color: rgba(20, 36, 183, 0.16);
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #232930;
+    z-index: 1000;
+    text-decoration: none;
+    font-family: "Mansalva", sans-serif;
+    cursor: pointer;
+}
+
+.logo:hover {
+    font-weight: bolder;
+}
+
+#title {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 5em;
+    text-align: center;
+    margin: 50px auto;
+    background-clip: text;
+    background-image: linear-gradient(135deg, #009cea, #4632ff);
+    color: transparent;
+}
+
+#whereat_title {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+#video {
+    display: flex;
+    flex-direction: column; /* Change en colonne pour que le bouton soit en dessous de la vidéo */
+    align-items: center; /* Centrer la vidéo et le bouton horizontalement */
+}
+
+#video_pfe {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #121418;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #232930;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px; /* Ajoute un espace entre la vidéo et le bouton */
+}
+
+.container {
+    margin-top: 10px; /* Un léger espace au-dessus du bouton */
+}
+
+.text-btn {
+    text-decoration: none; 
+    font-weight: bold;
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+}
+
+.container a {
+    text-decoration: none; 
+}
+
+.container {
+    background-color: chartreuse;
+    color: white;
+    text-decoration: none;
+    width: max-content;
+    padding: 5px 20px 15px 20px;
+    margin: 20px auto;
+    border-radius: 50px;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: #232930;
+    transition: all 0.3s;
+    display: flex;
+    
+}
+
+.container:hover {
+    background-color: #0a0c0e;
+}
+
+.social-bar {
+    position: fixed;
+    right: 0;
+    width: 50px;
+    height: auto;
+    background-color: rgba(0, 0, 145, 0.45);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+    transition: width 0.3s ease;
+    padding-top: 10px;
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+    border-color: #232930;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.first {
+    bottom: 60px; /* Positionne le premier div */
+}
+
+.second {
+    bottom: 120px; /* Positionne le second div plus haut */
+}
+
+.social-bar a {
+    color: inherit;
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-contact {
+    position: fixed;
+    right: 0;
+    top: 50px; /* Ajuste la position verticale si nécessaire */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement tous les éléments */
+    transition: all 0.3s ease;
+    overflow: hidden; /* Cache le contenu */
+    width: 50px; /* Largeur de l'icône */
+    background-color: rgba(0, 0, 145, 0.45);
+    color: #ffffff;
+    border-radius: 5px 0 0 5px;
+    padding-top: 10px;
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+    border-color: #232930;
+}
+
+.social-contact .con {
+    display: none; /* Masque la section par défaut */
+    margin: 0px;
+    padding: 0px;
+}
+
+.social-contact i {
+    color: inherit;
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-contact:hover {
+    width: 250px; /* Largeur lorsque survolé */
+}
+
+.social-contact:hover .con {
+    display: block; /* Affiche la section lors du survol */
+}
+
+.contact {
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 0; /* Supprime les marges autour du texte */
+    padding: 5px 0; /* Ajoute un peu de padding vertical pour le texte */
+}
+
+.hover-text {
+    position: absolute;
+    left: -100px;
+    opacity: 0;
+    transition: left 0.3s ease, opacity 0.3s ease;
+}
+
+.first:hover {
+    width: 80px; /* Change la largeur de la barre au survol */
+}
+
+.first:hover .hover-text {
+    left: -80%;
+    opacity: 1;
+}
+
+.first:hover a {
+    transform: translateX(-10px);
+}
+
+.second:hover {
+    width: 80px; /* Change la largeur de la barre au survol */
+}
+
+.second:hover .hover-text {
+    left: -80%;
+    opacity: 1;
+}
+
+.second:hover a {
+    transform: translateX(-10px);
+}
+
+.mail {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Mansalva", sans-serif;
+    font-style: normal;
+}
