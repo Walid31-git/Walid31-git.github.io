@@ -37,8 +37,8 @@ body {
     left: 20px;
     font-size: 1.5em;
     font-weight: bold;
-    color: #4632ff;
-    background-color: rgba(20, 36, 183, 0.16);
+    color: chartreuse;
+    background-color: rgba(20, 183, 61, 0.16);
     display: inline-block;
     padding: 10px 10px;
     border-radius: 5px;
@@ -62,8 +62,8 @@ body {
     text-align: center;
     margin: 50px auto;
     background-clip: text;
-    background-image: linear-gradient(135deg, #009cea, #4632ff);
-    color: transparent;
+    background-image: linear-gradient(135deg, #0004ea, #270075);
+    color: chartreuse;
 }
 
 #whereat_title {
@@ -97,14 +97,16 @@ body {
 }
 
 .container {
-    margin-top: 10px; /* Un léger espace au-dessus du bouton */
+    
 }
 
 .text-btn {
     text-decoration: none; 
     font-weight: bold;
+    font-size: larger;
     font-family: "Comfortaa", sans-serif;
     color: white;
+    margin-top: 1000px;
 }
 
 .container a {
